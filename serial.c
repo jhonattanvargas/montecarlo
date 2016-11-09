@@ -48,8 +48,6 @@ int main(int argc, const char *argv[]){
   struct timespec requestStart, requestEnd;
   clock_gettime(CLOCK_REALTIME, &requestStart);
 
-  //double c=0;
-  //double pi = 0;
   for (i = 0; i < totalpoints; i++) {
     double x = rand_r(&rand_state) / ((double)RAND_MAX + 1) * 2.0 - 1.0;
     double y = rand_r(&rand_state) / ((double)RAND_MAX + 1) * 2.0 - 1.0;
